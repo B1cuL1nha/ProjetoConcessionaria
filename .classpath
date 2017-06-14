@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="sceweb/src"/>
+	<classpathentry kind="src" path="sceweb/teste"/>
+	<classpathentry kind="lib" path="sceweb/WebContent/WEB-INF/lib/joda-time-2.4.jar"/>
+	<classpathentry kind="lib" path="sceweb/WebContent/WEB-INF/lib/junit.jar"/>
+	<classpathentry kind="lib" path="sceweb/WebContent/WEB-INF/lib/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="sceweb/WebContent/WEB-INF/lib/mysql-connector-java-5.1.12-bin.jar"/>
+	<classpathentry kind="lib" path="sceweb/WebContent/WEB-INF/lib/selenium-server-standalone-3.3.1.jar"/>
+	<classpathentry kind="lib" path="sceweb/WebContent/WEB-INF/lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="sceweb/WebContent/WEB-INF/lib/tools.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="sceweb/build/classes"/>
+</classpath>
