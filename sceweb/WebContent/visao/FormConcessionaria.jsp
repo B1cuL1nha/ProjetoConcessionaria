@@ -9,7 +9,7 @@
                 font: normal 12px courier !important;
             }
 </style>
-<title>Manter Concessionaria</title>
+<title>Concessionaria</title>
 <link rel="stylesheet" type="text/css" href="/sceweb/CSS/Formato.css">
 <script type="text/javascript" language="javascript">
 	onload = function() {

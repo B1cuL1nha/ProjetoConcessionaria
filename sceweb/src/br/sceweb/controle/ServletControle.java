@@ -12,19 +12,13 @@ import org.apache.log4j.Logger;
 import br.sceweb.modelo.Concessionaria;
 import br.sceweb.modelo.ConcessionariaDao;
 
-/** // $codepro.audit.disable
- * Servlet implementation class ServletControle
- */
-public class ServletControle extends HttpServlet { // $codepro.audit.disable
-	private static final long serialVersionUID = 1L; // $codepro.audit.disable
-	Logger logger = Logger.getLogger(ServletControle.class); // $codepro.audit.disable
-	String mensagem = ""; // $codepro.audit.disable
-	ConcessionariaDao ConcessionariaDAO; // $codepro.audit.disable
-	String placaParaExclusao = "";// seta a placa para exclusao // $codepro.audit.disable
+public class ServletControle extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	Logger logger = Logger.getLogger(ServletControle.class);
+	String mensagem = "";
+	ConcessionariaDao ConcessionariaDAO;
+	String placaParaExclusao = "";
 
-	/**
-	 * Default constructor.
-	 */
 	public ServletControle() {
 		// TODO Auto-generated constructor stub
 
@@ -34,8 +28,8 @@ public class ServletControle extends HttpServlet { // $codepro.audit.disable
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
 	 *      response)
 	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) // $codepro.audit.disable
-			throws ServletException, IOException { // $codepro.audit.disable
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		// TODO Auto-generated method stub
 	}
 
@@ -43,17 +37,17 @@ public class ServletControle extends HttpServlet { // $codepro.audit.disable
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
 	 *      response)
 	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) // $codepro.audit.disable
-			throws ServletException, IOException { // $codepro.audit.disable
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		request.setAttribute("erro", null);
 		executaComando(request, response);
 	}
 
 	/**
-	 * Método de execução de comandos.
+	 * Metodo para executar.
 	 */
-	protected void executaComando(HttpServletRequest request, HttpServletResponse response) // $codepro.audit.disable
-			throws ServletException, IOException { // $codepro.audit.disable
+	protected void executaComando(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		String parametro = request.getParameter("acao");
 		logger.info("acao do servletcontrole = " + parametro);
 		String url = "";
@@ -113,10 +107,10 @@ public class ServletControle extends HttpServlet { // $codepro.audit.disable
 	}
 
 	/**
-	 * Método de cadastro de empresa.
-	 */ // $codepro.audit.disable
-	public String cadastrarConcessionaria(String placa, String marca, String modelo, String ano, // $codepro.audit.disable
-			String cor, String cambio, String portas, String combustivel, String descricao) { // $codepro.audit.disable
+	 * Metodo cadastrar.
+	 */
+	public String cadastrarConcessionaria(String placa, String marca, String modelo, String ano,
+			String cor, String cambio, String portas, String combustivel, String descricao) {
 		String msg = "";
 		Concessionaria concessionaria = new Concessionaria();
 		ConcessionariaDao concessionariaDAO = new ConcessionariaDao();
@@ -141,18 +135,18 @@ public class ServletControle extends HttpServlet { // $codepro.audit.disable
 	}
 
 	/**
-	 * Método de consulta da concessionaria.
-	 */ // $codepro.audit.disable
-	public Concessionaria consulta(String placa) { // $codepro.audit.disable
+	 * Consultar.
+	 */
+	public Concessionaria consulta(String placa) {
 		logger.info("consulta concessionaria 2 = " + placa);
 		ConcessionariaDao concessionariaDAO = new ConcessionariaDao();
 		return concessionariaDAO.consultaConcessionaria(placa);
 	}
 
 	/**
-	 * Método de inclusão da concessionaria.
-	 */ // $codepro.audit.disable
-	public int excluirEmpresa(String placa) { // $codepro.audit.disable
+	 * Inclusão
+	 */
+	public int excluirEmpresa(String placa) {
 		int numAfetadas = 0;
 		ConcessionariaDao concessionariaDAO = new ConcessionariaDao();
 		try {

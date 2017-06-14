@@ -8,10 +8,10 @@ import com.mysql.jdbc.Connection;
 
 import br.sceweb.servico.FabricaDeConexoes;
 
-public class ConcessionariaDao { // $codepro.audit.disable
+public class ConcessionariaDao {
 
-	public int adiciona(Concessionaria concessionaria) { // $codepro.audit.disable
-		PreparedStatement ps; // $codepro.audit.disable
+	public int adiciona(Concessionaria concessionaria) {
+		PreparedStatement ps;
 		int codigoRetorno = 0;
 
 		try (Connection conn = new FabricaDeConexoes().getConnection()) {
@@ -37,8 +37,8 @@ public class ConcessionariaDao { // $codepro.audit.disable
 		return codigoRetorno;
 	}
 
-	public int exclui(String placa) { // $codepro.audit.disable
-		PreparedStatement ps; // $codepro.audit.disable
+	public int exclui(String placa) {
+		PreparedStatement ps;
 		int codigoretorno = 0;
 
 		try (Connection conn = new FabricaDeConexoes().getConnection()) {
@@ -53,8 +53,8 @@ public class ConcessionariaDao { // $codepro.audit.disable
 		return codigoretorno;
 	}
 
-	public Concessionaria consultaConcessionaria(String placa){ // $codepro.audit.disable
-		PreparedStatement ps; // $codepro.audit.disable
+	public Concessionaria consultaConcessionaria(String placa){
+		PreparedStatement ps;
 		Concessionaria concessionaria = new Concessionaria();
 		
 		try (Connection conn = new FabricaDeConexoes().getConnection()) {

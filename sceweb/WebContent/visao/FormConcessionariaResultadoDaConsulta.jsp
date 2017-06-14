@@ -12,13 +12,13 @@
 		
 	}
 </script>
-<title>Consulta Concessionaria</title>
+<title>Concessionaria</title>
 </head>
 <body>
 <jsp:include page="Cabecalho.jsp" />
 	<div id="principal">
 		<div id="titulo">
-			<h3>Concessionaria - Consulta</h3>
+			<h3>Concessionaria - Consultar</h3>
 		</div>
 		<hr>
 		<div id="formulario2">

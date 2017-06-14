@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Cabeçalho</title>
+<title>Fatec</title>
 <link rel="stylesheet" type="text/css" href="/sceweb-v1/CSS/formato.css">
 </head>
 <body>

@@ -4,49 +4,64 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
-public class FormConcessionaria { // $codepro.audit.disable
+public class FormConcessionaria {
 	
-	/* Regiao: Campos */
+	
+	
+	
+	/* campos */
+	
+	
+	
+	
 		
-	@FindBy(how = How.ID, using = "placa") // $codepro.audit.disable
+	@FindBy(how = How.ID, using = "placa")
 	private WebElement placa;
 	
-	@FindBy(how = How.ID, using = "marca") // $codepro.audit.disable
+	@FindBy(how = How.ID, using = "marca")
 	private WebElement marca;
 	
-	@FindBy(how = How.ID, using = "modelo") // $codepro.audit.disable
+	@FindBy(how = How.ID, using = "modelo")
 	private WebElement modelo;
 	
-	@FindBy(how = How.ID, using = "ano") // $codepro.audit.disable
+	@FindBy(how = How.ID, using = "ano")
 	private WebElement ano;
 	
-	@FindBy(how = How.ID, using = "cor") // $codepro.audit.disable
+	@FindBy(how = How.ID, using = "cor")
 	private WebElement cor;
 	
-	@FindBy(how = How.ID, using = "cambio") // $codepro.audit.disable
+	@FindBy(how = How.ID, using = "cambio")
 	private WebElement cambio;
 	
-	@FindBy(how = How.ID, using = "portas") // $codepro.audit.disable
+	@FindBy(how = How.ID, using = "portas")
 	private WebElement portas;
 	
-	@FindBy(how = How.ID, using = "combustivel") // $codepro.audit.disable
+	@FindBy(how = How.ID, using = "combustivel")
 	private WebElement combustivel;
 	
-	@FindBy(how = How.ID, using = "descricao") // $codepro.audit.disable
+	@FindBy(how = How.ID, using = "descricao")
 	private WebElement descricao;
 	
 	/* Regiao: Botoes */
 	
-	@FindBy(how = How.ID, using = "incluir") // $codepro.audit.disable
+	@FindBy(how = How.ID, using = "incluir")
 	private WebElement incluir;
 	
-	@FindBy(how = How.ID, using = "consultar") // $codepro.audit.disable
+	@FindBy(how = How.ID, using = "consultar")
 	private WebElement consultar;
 	
-	@FindBy(how = How.ID, using = "excluir") // $codepro.audit.disable
+	@FindBy(how = How.ID, using = "excluir")
 	private WebElement excluir;
 	
-	/* Regiao: getters and setter */
+	
+	
+	
+	
+	/* getters and setter */
+	
+	
+	
+	
 	
 	public WebElement getPlaca() {
 		return placa;
@@ -120,9 +135,16 @@ public class FormConcessionaria { // $codepro.audit.disable
 		this.descricao = descricao;
 	}
 	
-	/* Regiao: Acoes de botoes */
 	
-	public void clickOnInluir(){ // $codepro.audit.disable
+	
+	
+	/* Botões */
+	
+	
+	
+	
+	
+	public void clickOnInluir(){ 
 		incluir.click();
 	}
 	
@@ -150,11 +172,11 @@ public class FormConcessionaria { // $codepro.audit.disable
 		this.excluir = excluir;
 	}
 
-	public void clickOnConsultar(){ // $codepro.audit.disable
+	public void clickOnConsultar(){
 		consultar.click();
 	}
 	
-	public void clickOnExcluir(){ // $codepro.audit.disable
+	public void clickOnExcluir(){ 
 		excluir.click();
 	}
 }
